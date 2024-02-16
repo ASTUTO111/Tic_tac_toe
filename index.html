@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe by Noah</title>
+  </head>
+  <body>
+    <div id="board" class="game-board">
+      <div class="square up"></div>
+      <div class="square up half"></div>
+      <div class="square up"></div>
+      <div class="square"></div>
+      <div class="square half"></div>
+      <div class="square"></div>
+      <div class="square down"></div>
+      <div class="square down half"></div>
+      <div class="square down"></div>
+    </div>
+    <dialog type="modal">
+      <h2></h2>
+      <button id="restartButton">Restart</button>
+      <button id="returnToMenuButton">Return to Menu</button>
+    </dialog>
+    <div id="newMainMenu">
+      <h1>Tic-tac-toe by Noah</h1>
+      <button id="play1v1Button">Play 1v1</button>
+      <button id="playVsAIButton">Play 1vAI</button>
+    </div>
+    <div id="playerInputs1v1" style="display: none">
+      <input type="text" id="player1Name" placeholder="Player 1 Name" />
+      <input type="text" id="player2Name" placeholder="Player 2 Name" />
+      <button id="startGame1v1">Play</button>
+      <button id="backButton1v1">Back</button>
+    </div>
+    <div id="playerInputsVsAI" style="display: none">
+      <input type="text" id="player1NameAI" placeholder="Player 1 Name" />
+      <button id="easyAI">EASY</button>
+      <button id="mediumAI">MEDIUM</button>
+      <button id="hardAI">HARD</button>
+      <button id="backButtonVsAI">Back</button>
+    </div>
+    <footer>Copyright &copy;2024 Noah Lezama</footer>
+  </body>
+</html>
